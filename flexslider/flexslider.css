@@ -1,0 +1,79 @@
+/*
+ * jQuery FlexSlider v2.1
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ * Customized for RealSatisfied WordPress Plugin
+ */
+
+ 
+/* Browser Resets */
+div.rsw-flexslider, div.rsw-flexslider *
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+        list-style: none;
+}
+/* FlexSlider Necessary Styles
+*********************************/ 
+.rsw-flexslider {margin: 0; padding: 0;}
+.rsw-flexslider .rs-slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.rsw-flexslider .rs-slides img {width: 100%; display: block;}
+.rsw-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.rs-slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .rs-slides {display: block;} 
+* html .rs-slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .rs-slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.rsw-flexslider {margin: 0 0 20px; position: relative; zoom: 1;}
+.rsw-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .rsw-viewport {max-height: 300px;}
+.rsw-flexslider .rs-slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.rsw-direction-nav {*height: 0;}
+.rsw-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(images/bg_direction_nav.png) no-repeat 0 0; position: absolute!important; top: 50px; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.rsw-direction-nav .rsw-next {background-position: 100% 0; right: -36px; }
+.rsw-direction-nav .rsw-prev {left: -36px;}
+.rsw-flexslider:hover .rsw-next {opacity: 0.8; right: 5px;}
+.rsw-flexslider:hover .rsw-prev {opacity: 0.8; left: 5px;}
+.rsw-flexslider:hover .rsw-next:hover, .rsw-flexslider:hover .rsw-prev:hover {opacity: 1;}
+.rsw-direction-nav .rsw-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.rsw-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.rsw-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.rsw-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.rsw-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.rsw-control-paging li a.rsw-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.rsw-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.rsw-control-thumbs li {width: 25%; float: left; margin: 0;}
+.rsw-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.rsw-control-thumbs img:hover {opacity: 1;}
+.rsw-control-thumbs .rsw-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .rsw-direction-nav .rsw-prev {opacity: 1; left: 0;}
+  .rsw-direction-nav .rsw-next {opacity: 1; right: 0;}
+}

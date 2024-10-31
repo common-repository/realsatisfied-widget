@@ -1,0 +1,142 @@
+.rsw_widget h1, .rsw_widget h3 {
+	text-align: center;
+}
+
+body .rsw-ratings ul, body .rsw-ratings ul li {
+	border: none;
+	margin: 0 0 5px 0;
+	list-style: none;
+}
+
+body .rsw-ratings {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body .rsw-ratings ul {
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+body .rsw-ratings ul li:before {
+    float: left;
+    width: 0;
+}
+
+body .rsw-ratings ul span + span {
+    float: right;
+}
+
+body .rsw-ratings .ratings-summary {
+	text-align: center;
+}
+
+div.rsw-flexslider ul.rs-slides li, div.rsw-flexslider ul.rs-slides {
+	padding: 0!important;
+	border: none!important;
+	margin: 0;
+}
+
+.rsw-flexslider li a, .rs-verified a {
+	float: none!important;
+}
+
+.rsw-flexslider {
+	margin-bottom: 20px;
+	max-width: 100%;
+}
+
+ul.rsw-direction-nav {
+	height: 10px;
+}
+
+div.rsw-flexslider ul.rsw-direction-nav li {
+	position: static!important;
+	border: none!important;
+	height: 5px;
+	list-style-type: none;
+}
+
+.rsw-control-paging {
+	position: relative;
+}
+
+div.rs-verified, a.rs-verified {
+	text-align: right;
+	font-size: 11px;
+}
+
+div.rs-verified {
+	text-align: center;
+}
+
+p.rs-disp-testimonial {
+	font-weight: bold;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+p.rs-disp-byline {
+	margin-bottom: 5px;
+	text-align: right;
+	font-size: 11px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.rs-testimonial {
+	font-style: italic;
+	line-height: 21px;
+	font-size: 14px;
+}
+
+.rs-tst-header {
+	margin-top:10px;
+}
+
+.rs-avatar {
+	float:left;
+	border: 1px solid #cccccc;
+	padding: 2px;
+	border-radius: 10px;
+	text-aling: center;
+	margin: 0 5px 5px 0;
+}
+
+.rsw-flexslider li img.rs-agent-photo { 
+	border: 1px solid #cccccc;
+	padding: 2px;
+	border-radius: 10px;
+	width: 80%;
+	max-width: 120px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.rs-byline {
+	font-weight:bold;
+}
+
+.rs-badge {
+	margin-top: 10px;
+}
+
+.widget_real_satisfied_testimonials_widget {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Thickbox Pop Up */
+.rs-verified {text-align: center;}
+.rs-byline {text-align: right;}
+.rsw-badge {text-align: center;}
+#TB_overlay {z-index:1000;}
+#TB_window {z-index: 100002;}
+#TB_load{z-index:100003;}
+#TB_HideSelect{z-index:99999;}
